@@ -1,0 +1,118 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  
+<!-- Mirrored from colorlib.com/polygon/gentelella/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 26 Jun 2021 08:05:29 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="images/favicon.ico" type="image/ico" />
+
+    <title>Hate trend </title>
+
+    <!-- Bootstrap -->
+    <link href="{%static 'style/bootstrap.min.css' %}" type="text/css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="{%static 'style/font-awesome.min.css' %}" type="text/css" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="{%static 'style/nprogress.css' %}" type="text/css" rel="stylesheet">
+    <!-- iCheck -->
+    <link href="{%static 'style/green.css' %}" type="text/css" rel="stylesheet">
+
+    <!-- bootstrap-progressbar -->
+    <link href="{%static 'style/bootstrap-progressbar-3.3.4.min.css' %}" type="text/css"rel="stylesheet">
+    <!-- JQVMap -->
+    <link href="{%static 'style/jqvmap.min.css' %}" type="text/css" rel="stylesheet"/>
+    <!-- bootstrap-daterangepicker -->
+    <link href="{%static 'style/daterangepicker.css' %}" type="text/css" rel="stylesheet">
+
+    <!-- Custom Theme Style -->
+    <link href="{%static 'style/custom.min.css' %}" type="text/css"  rel="stylesheet">
+  <meta name="robots" content="index, nofollow">
+
+</head>
+
+  <style>
+.button {
+  border: none;
+  color: darkred;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: overline;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  background-color: Green;
+}
+
+.button1 {background-color: #4CAF50;} /* Green */
+.button2 {background-color: #008CBA;} /* Blue */
+</style>
+<h1>Roman Urdu</h1>
+
+        <!-- top navigation -->
+       
+        <!-- /top navigation -->
+
+        <!-- page content -->
+        <div class="right_col" role="main">
+          <!-- top tiles -->
+          <div class="row" style="display: inline-block;" >
+          <div class="tile_count">
+            <div class="col-md-2 col-sm-4  tile_stats_count">
+              <span class="count_top"><i class="fa fa-user"></i> Total Tweets</span>
+              <div class="count">{{totaltweets}}</div>
+              <span class><i class="green">{{ptotaltweets}} </i> From last 7 Days</span>
+            </div>
+            <div class="col-md-2 col-sm-4  tile_stats_count">
+              <span class="count_top"><i class="fa fa-clock-o"></i> Total Hateful Tweets</span>
+              <div class="count">{{hateful}}</div>
+              <span class="count_bottom"><i class="green"><i class="fa fa-sort-user"></i>{{phateful}} </i> From last 7 days</span>
+            </div>
+            <div class="col-md-2 col-sm-4  tile_stats_count">
+              <span class="count_top"><i class="fa fa-user"></i> Total Hate-Speech </span>
+              <div class="count green">{{hatespeech}}</div>
+              <span class="count_bottom"><i class="green"><i class="fa fa-sort-user"></i>{{phatespeech}} </i> From last 7 days</span>
+            </div>
+            <div class="col-md-2 col-sm-4  tile_stats_count">
+              <span class="count_top"><i class="fa fa-user"></i> Racism</span>
+              <div class="count">{{racism}}</div>
+              <span class="count_bottom"><i class="red"><i class="fa fa-sort-user"></i>{{pracism}} </i> From last 7 days</span>
+            </div>
+            <div class="col-md-2 col-sm-4  tile_stats_count">
+              <span class="count_top"><i class="fa fa-user"></i>Religious</span>
+              <div class="count">{{religious}}</div>
+              <span class="count_bottom"><i class="green"><i class="fa fa-sort-user"></i>{{preligious}} </i> From 7 days</span>
+            </div>
+            <div class="col-md-2 col-sm-4  tile_stats_count">
+              <span class="count_top"><i class="fa fa-user"></i> Others</span>
+              <div class="count">{{others}}</div>
+              <span class="count_bottom"><i class="green"><i class="fa fa-sort-user"></i>{{pothers}} </i> From last Week</span>
+            </div>
+          </div>
+        </div>
+
+        
+
+          <form action="back">
+            <button class="button">Back</button>
+          </form>
+            
+
+           
+
+            
+
+          
+       
+
+</script>
+</body>
+
+
+</html>
